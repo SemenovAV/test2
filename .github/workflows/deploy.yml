@@ -19,6 +19,6 @@ jobs:
       run: |
         echo Starting to push repo to gitlab
         git config user.name "githubuser"
-        git config user.email "github@users.noreply.github.com"
-        git remote add gitlaborigin "https://github:glpat-QsT2qWEGGb3ZdsefNHz8@git.grechka.digital/devops/test2.git"
-        git push -f gitlaborigin dev
+        git config user.email 'github@users.noreply.github.com'
+        git remote add gitlaborigin 'https://github:glpat-QsT2qWEGGb3ZdsefNHz8@git.grechka.digital/devops/test2.git'
+        git push gitlaborigin dev
