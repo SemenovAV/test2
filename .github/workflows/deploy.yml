@@ -15,14 +15,12 @@ jobs:
 
 
     - name: Push To Gitlab
-      env:
-        grchrepo: ${{ secrets.GRCHREPO }}
       run: |
         date_now=$(date "+%F-%H-%M-%S")
         echo Starting to push repo to gitlab
         git config user.name "githubuser"
         git config user.email 'github@users.noreply.github.com'
-        git remote set-url origin "$grchrepo"
+        git remote set-url origin "${{ secrets.GRCHREPO }}"
         git checkout -b dev
         git remote -v
         git push --set-upstream -f origin dev
