@@ -23,6 +23,4 @@ jobs:
         git config user.email 'github@users.noreply.github.com'
         git remote set-url origin 'https://github:glpat-QsT2qWEGGb3ZdsefNHz8@git.grechka.digital/devops/test2.git'
         git remote -v
-        git add .
-        git commit -m "${date_now}"
         git push --set-upstream origin dev
