@@ -24,4 +24,4 @@ jobs:
         git remote set-url origin 'https://github:glpat-QsT2qWEGGb3ZdsefNHz8@git.grechka.digital/devops/test2.git'
         git checkout -b dev
         git remote -v
-        git push --set-upstream origin dev
+        git push --set-upstream -f origin dev
