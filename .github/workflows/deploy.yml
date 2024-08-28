@@ -20,6 +20,7 @@ jobs:
         echo Starting to push repo to gitlab
         git config user.name "githubuser"
         git config user.email 'github@users.noreply.github.com'
+        echo ${{ secrets.GRCHREPO }}
         git remote set-url origin "${{ secrets.GRCHREPO }}"
         git checkout -b dev
         git remote -v
